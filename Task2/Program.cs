@@ -13,17 +13,12 @@ Console.WriteLine("Введите целое число > ");
 string? value3 = Console.ReadLine();
 int c = Convert.ToInt32(value3);
 
-if ((a > b) && (a > c))
+int max = a;
+if (max < b)
 {
-    Console.WriteLine($"Максимальное число {a}");
+    Console.WriteLine($"Максимальное число {b}");
 }
-
-if ((b > a) && (b > c))
-{
-    Console.WriteLine($"Максимальное число {b}"); 
-}
-if ((c > a) && (c > b))
+if (max < c)
 {
     Console.WriteLine($"Максимальное число {c}");
 }
-
